@@ -1,22 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import MarkdownEditor from './MarkdownEditor';
 
 const Main = () => {
-  return (
-    <div>
+    return (
         <StyledDiv>
-            Main Page
+            <MarkdownEditor></MarkdownEditor>
         </StyledDiv>
-    </div>
-  );
+    );
 }
 
 const StyledDiv = styled.div`
-    padding:40px;
-    font-size:12px;
-    background-color:#FFF;
-    text-align:center;
-    color:#000;
+    height: calc(100% - 101px);
 `
 
 export default Main;
